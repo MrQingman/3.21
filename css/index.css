@@ -1,0 +1,196 @@
+@import "iphone.css";
+
+ul.banner_box{
+    position: relative;
+    width: 100%;
+    height:603.75px;
+}
+ul.banner_box>li{
+    position: absolute;
+    left:100%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+ul.banner_box>li{
+    width: 100%;
+    height: 100%;
+
+}
+
+ul.banner_box>li:nth-child(1){
+     background-image: url("../img/iphone_alt_small.jpg");
+    left: 0;
+     background-color:#0A0A0A ;
+    background-size: cover;
+}
+ul.banner_box>li:nth-child(2){
+    background-image:url("../img/macbookpro_medium.jpg");
+    background-color: #FFFFFF;
+    background-size: contain;
+
+}
+ul.banner_box>li:nth-child(3){
+    background-image: url("../img/watch_alt_portrait_small.jpg");
+
+    background-color: #F2F2F2;
+    background-position: center -40px;
+
+}
+.banner{
+    height: 483px;
+    overflow: hidden;
+    position: relative;
+}
+.btn{
+    width: 180px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.btn_all{
+    position: absolute;
+    bottom: 8%;
+    width: 100%;
+    z-index: 999;
+}
+.btn>li{
+    float: left;
+    width: 50px;
+    height: 2px;
+    margin:0 5px;
+    z-index: 3;
+    background: gray;
+}
+.left_box{
+     position:absolute;
+     left: 0;
+     top: 0;
+     width: 20%;
+     z-index: 999;
+     height: 100%;
+    cursor: pointer;
+ }
+.left_b{
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;
+    margin: auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background:  rgba(180,180,180,0.25);
+    color: #848484;
+    font-size: 55px;
+    text-align: center;
+    line-height: 64px;
+    font-family: "宋体";
+    user-select:none;
+    display: none;
+    opacity: 0.4;
+    transition: all 1s;    
+}
+.right_box{
+    position:absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+    z-index: 999;
+    height: 100%;
+    cursor: pointer;
+}
+.right_box:hover .right_b{
+	display: block;
+	
+}
+.right_b:hover{
+	opacity: 0.8;
+}
+.left_box:hover .left_b{
+	display: block;
+	
+}
+.left_b:hover{
+	opacity: 0.8;
+}
+.right_b{
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;
+    margin: auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(180,180,180,0.25);
+    color: #848484;
+    font-size: 55px;
+    text-align: center;
+    line-height: 64px;
+    font-family: "宋体";
+    user-select:none;
+    display: none;
+    opacity: 0.4;
+    transition: all 1s;
+}
+.progress{
+    width: 0;
+    background:red;
+    height: 100%;
+    display: block;
+}
+@media screen and (min-width:640px){
+    ul.banner_box{
+        height: 620px;
+    }
+    .banner{
+        height:496px;
+    }
+    .btn{
+        left:43%;
+    }
+    ul.banner_box>li{
+        width: 100%;
+        height:100%;
+        background-size: contain;
+        background-position: center;
+    }
+    ul.banner_box>li:nth-child(1){
+        background-image:  url("../img/iphone_alt_medium.jpg");
+        background-position: center -90px;
+    }
+    ul.banner_box>li:nth-child(2){
+        background-image:  url("../img/macbookpro_medium.jpg");
+        background-position: center 100px;
+
+    }
+    ul.banner_box>li:nth-child(3){
+        background-image: url("../img/watch_alt_medium.jpg");
+        background-position: center -65px;
+    }
+
+}
+@media screen and (min-width:1014px){
+    ul.banner_box{
+        height: 648.75px;
+    }
+    .banner{
+        height:519px;
+    }
+    ul.banner_box>li{
+        width: 100%;
+        height: 100%;
+    }
+    ul.banner_box>li:nth-child(1){
+        background-image: url("../img/iphone_alt_large.jpg");
+        background-position: center -130px;
+
+
+    }
+    ul.banner_box>li:nth-child(2){
+        background-image: url("../img/macbookpro_large.jpg");
+        background-position: center 50px;
+
+    }
+    ul.banner_box>li:nth-child(3){
+        background-image: url("../img/watch_alt_large.jpg");
+        background-position: center -75px;
+    }
+}
